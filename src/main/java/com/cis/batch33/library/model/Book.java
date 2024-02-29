@@ -1,40 +1,51 @@
 package com.cis.batch33.library.model;
+import lombok.Data;
 
+import java.util.List;
+
+@Data
 public class Book {
-    private long bookId;
+    private int bookId;
+    private String authorName;
     private String title;
-    private String author;
     private int yearPublished;
+    private int quantity;
+    private List<BookIsbnDTO> bookIsbns;
 
-    public long getBookId() {
-        return bookId;
-    }
+    /*private Integer bookId;
+    private String author;
+    private String publisher;
+    private int yearOfPublish;
 
-    public void setBookId(long bookId) {
+    public void setBookId(Integer bookId) {
         this.bookId = bookId;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getAuthor() {
-        return author;
     }
 
     public void setAuthor(String author) {
         this.author = author;
     }
 
-    public int getYearPublished() {
-        return yearPublished;
+    public void setPublisher(String publisher) {
+        this.publisher = publisher;
     }
 
-    public void setYearPublished(int yearPublished) {
-        this.yearPublished = yearPublished;
+    public void setYearOfPublish(Integer yearOfPublish) {
+        this.yearOfPublish = yearOfPublish;
     }
+
+    public Integer getBookId() {
+        return bookId;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public String getPublisher() {
+        return publisher;
+    }
+
+    public Integer getYearOfPublish() {
+        return yearOfPublish;
+    }*/
 }
